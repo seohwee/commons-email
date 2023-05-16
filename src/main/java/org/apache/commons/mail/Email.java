@@ -538,7 +538,7 @@ public abstract class Email
     {
         checkSessionAlreadyInitialized();
 
-        if (aPortNumber < 1)
+        if (aPortNumber < 0)
         {
             throw new IllegalArgumentException(
                 "Cannot connect to a port number that is less than 1 ( "
